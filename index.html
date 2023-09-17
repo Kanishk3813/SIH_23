@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollabSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="form"><form action="">
+            <input type="text" name="search" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form></div>
+        
+        <nav>
+            
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="index1.html">Leaderboard</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container hero" id="hero">
+       
+        <!-- <h1>Connecting <br> Creativity <br> One Collaboration <br> at a Time</h1> -->
+        <h1>Where Dreams Direct and <br> Dedication Drives</h1>
+    </div>
+    <div class="head">
+        <h1>PROJECTS</h1>
+    </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="img/pic1.jpg" alt="Swift Projects">
+            <div class="overlay">
+                <h3><a href="proj-desc.html">Swift Projects</a></h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/pic2.jpg" alt="JavaScript Projects">
+            <div class="overlay">
+                <h3>JavaScript Projects</h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/pic3.jpg" alt="C++">
+            <div class="overlay">
+                <h3>Learn</h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/pic4.jpg" alt="JAVA">
+            <div class="overlay">
+                <h3>Practice</h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/pic5.jpg" alt="C">
+            <div class="overlay">
+                <h3>C</h3>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="img/pic6.jpg" alt="Python">
+            <div class="overlay">
+                <h3>Python</h3>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="stats-container">
+        <div class="stats-item">
+            <strong class="highlight">50,000+</strong> People Registered
+            <div class="stats-label">and counting...</div>
+        </div>
+        <div class="stats-item">
+            <strong class="highlight">2,000+</strong> Participated
+            <div class="stats-label">in our events</div>
+        </div>
+        <div class="stats-item">
+            <strong class="highlight">4.8/5</strong> Average User Rating
+            <div class="stats-label">based on user reviews</div>
+        </div>
+        <div class="stats-item">
+            <strong class="highlight">99%</strong> Customer Satisfaction
+            <div class="stats-label">according to surveys</div>
+        </div>
+    </div>
+
+    <div class="imgslider slider-container" style="width: 100%;">
+       
+
+        <div class="slider">
+            <img src="img/student.jpg" alt="Image 2">
+            <img src="img/student.jpg" alt="Image 3">
+            <img src="img/student.jpg" alt="Image 1">
+            
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+     const slider = document.querySelector(".slider");
+     const images = document.querySelectorAll(".slider img");
+     const imageCount = images.length;
+     let currentIndex = 0;
+ 
+     function nextSlide() {
+         currentIndex = (currentIndex + 1) % imageCount;
+         updateSlider();
+     }
+ 
+     function updateSlider() {
+         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+     }
+ 
+     setInterval(nextSlide, 4000);
+ });
+ 
+     </script>
+
+<div>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Send us a message below.</p>
+        <div class="contact-form">
+            <input type="text" class="contact-input" placeholder="Your Name">
+            <input type="email" class="contact-input" placeholder="Your Email">
+            <textarea class="contact-input" rows="4" placeholder="Your Message"></textarea>
+            <button class="contact-button">Send</button>
+        </div>
+    </section>
+    </div>
+    
+    
+</body>
+</html>
